@@ -1,6 +1,8 @@
+using ChessMVC;
 using Microsoft.VisualBasic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace Tests
 {
@@ -23,6 +25,10 @@ namespace Tests
             var board = new Board();
 
             var printer = new BoardPrinter();
+
+            board.Move += (move) => Debug.WriteLine("");
+            game.Result += (result) => Debug.WriteLine("");
+            game.Capture += (capture) => Debug.WriteLine("");
 
             foreach (var move in moves)
             {
