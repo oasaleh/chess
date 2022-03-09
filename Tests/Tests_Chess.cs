@@ -2,6 +2,7 @@ using ChessMVC;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace Tests
 {
@@ -54,7 +55,15 @@ namespace Tests
         {
             internal void Show(Board board)
             {
-                throw new NotImplementedException();
+                for (int c = 1; c <= 8; c++)
+                {
+                    for (int r = 1; r <= 8; r++)
+                    {
+                        Debug.Write($"[{board[c, r]?.ToString() ?? " "}]");
+                    }
+                    Debug.WriteLine(string.Empty);
+                }
+                Debug.WriteLine(string.Empty.PadRight(8 * 3, '-'));
             }
         }
     }
