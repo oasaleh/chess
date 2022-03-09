@@ -6,7 +6,11 @@ namespace ChessMVC
     {
         public void Apply(string move, Board board)
         {
-            throw new NotImplementedException();
+            var start = move.Substring(0, 2);
+            var dest = move.Substring(2, 2);
+
+            board[dest[0], dest[1]] = board[[start[0], dest[1]];
+            board[start[0], start[1]] = null;
         }
     }
 }
