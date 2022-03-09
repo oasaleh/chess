@@ -9,8 +9,9 @@ namespace ChessMVC
             var start = move.Substring(0, 2);
             var dest = move.Substring(2, 2);
 
-            board[dest[0], dest[1]] = board[[start[0], dest[1]];
-            board[start[0], start[1]] = null;
+            // 65 and 48 are to convert characters to board coordinates.
+            board[dest[0] - 65, dest[1] - 48] = board[start[0] - 65, start[1] - 48];
+            board[start[0] - 65, start[1] - 48] = null;
         }
     }
 }

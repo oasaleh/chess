@@ -28,9 +28,11 @@ namespace Tests
             };
 
             // The game understands the game/rules and it can apply moves.
+            // Chess is Controller.
             var game = new Chess();
 
             // The board is just squares.
+            // Board is Model. It maintains state.
             var board = new Board();
 
             var printer = new BoardPrinter();
