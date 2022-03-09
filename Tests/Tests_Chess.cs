@@ -1,9 +1,7 @@
 using ChessMVC;
-using Microsoft.VisualBasic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 
 namespace Tests
 {

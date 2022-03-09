@@ -4,7 +4,7 @@ namespace ChessMVC
 {
     public class Chess
     {
-        public void Apply(Strings move, Board board)
+        public void Apply(string move, Board board)
         {
             throw new NotImplementedException();
         }
