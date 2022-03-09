@@ -37,5 +37,9 @@ namespace Tests
                 printer.show(board);
             }
         }
+
+        private class BoardPrinter
+        {
+        }
     }
 }

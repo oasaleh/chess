@@ -1,6 +1,6 @@
-﻿namespace Tests
+﻿namespace ChessMVC
 {
-    internal class Board
+    public class Board
     {
         public Board()
         {
